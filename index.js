@@ -118,11 +118,10 @@ function processSum(numberList, callback) {
 */
 
 function processProduct(num1, num2, callback) {
-  return callback(num1, num2)
+  return callback(num1 * num2)
   }
- let multiply = (num1, num2) =>{
-    return num1 * num2;
-}
+
+
 
 /**
  * ### Challenge `processContains`
@@ -144,8 +143,8 @@ function processProduct(num1, num2, callback) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-  /* CODE HERE */
+function processContains(item, array, callback) {
+  return callback(array.includes(item));
 }
 
 /**
